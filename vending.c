@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 int main (void){
-    print("vending machine stock\n");
+    printf("vending machine stock\n");
 
     //create variables fpr first snack (Chips)
     float Price1 = 65.99;
-    int Quantity = 40;
+    int Quantity1 = 40;
     char Code1 = 'C';
 
     //Oreos
