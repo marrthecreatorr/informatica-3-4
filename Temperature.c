@@ -1,11 +1,11 @@
 #include <stdio.h>
-int main (avoid){
+int main (void){
 
-    int celcius;
-    int Fahrenheit;
+    int Celcius;
+    float Fahrenheit = (Celcius+32)*1.8;
 
-    prinf("Enter celcius ");
-    scanf("%d" , &celcius);
-    printf("Enter )
-
+    printf("Enter Celcius ");
+    scanf("%d" , &Celcius);
+    printf("celcius: %d ° \n", Celcius);
+    printf("Fahrenheit: %.2f \n", (Celcius*1.8)+32);
 }
