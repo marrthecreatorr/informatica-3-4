@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main (void)
-char item ('4')
+char item ('10')
     printf("item name")
     scanf("%d", &item name);
 
