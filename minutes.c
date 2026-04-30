@@ -1,19 +1,19 @@
 #include <stdio.h>
 int main (void){
-    int movrunt;
-    int startt;
-    printf("How long in the movie in minutes? ");
-    scanf("%d", %movrunt);
-    printf("What is the starting time? \n");
-    scanf("%d", &start);
-    int hrt = movrunt/60;
-    int mint = hrt %1;
-    int endt = startt+hrt+mint;
-    int endtm = endt %1;
+    int runningTime;
+    printf("Enter movie running time?");
+    scanf("%d", &runningTime);
+    int startHour;
+    int startMin;
+    printf("Start time: ");
+    scanf("%d:%d" , &startHour, &startMin);
 
-    printf("The movie is %d hr long\n", hrt);
-    printf("%d min long\n", mint);
-    printf("The end time is %d \n", endt);
-    printf("%d \n", endtm);
+    int hours = runningTime / 60;
+    int minutes = runningTime % 60;
 
+    int endHour = startHour + hours;
+    int endMin = startMin + minutes;
+
+    printf("The movie will last %d hr and %d min\n" , hours, minutes);
+    printf("End Time: %d:%d\n", endHour, endMin);
 }
